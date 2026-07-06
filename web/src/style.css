@@ -1,0 +1,94 @@
+/* RAG Chat 全局样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #f7f8fa;
+  --sidebar-bg: #1e1f26;
+  --sidebar-text: #c5c8d0;
+  --sidebar-active: #6c5ce7;
+  --chat-bg: #ffffff;
+  --user-msg: #6c5ce7;
+  --user-msg-text: #ffffff;
+  --ai-msg: #f0f1f5;
+  --ai-msg-text: #2d2d3a;
+  --border: #e4e5ea;
+  --text: #2d2d3a;
+  --text-secondary: #7a7c85;
+  --accent: #6c5ce7;
+  --accent-light: rgba(108, 92, 231, 0.1);
+  --node-bg: #f0f1f5;
+  --node-active: #6c5ce7;
+  --node-active-bg: rgba(108, 92, 231, 0.12);
+  --success: #00b894;
+  --error: #e17055;
+  --radius: 12px;
+  --radius-sm: 8px;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+#app {
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* 滚动条 */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: #c5c8d0;
+  border-radius: 3px;
+}
+
+/* Markdown 渲染样式 */
+.markdown-body {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.markdown-body p {
+  margin: 0 0 8px;
+}
+.markdown-body p:last-child {
+  margin-bottom: 0;
+}
+.markdown-body code {
+  background: rgba(108, 92, 231, 0.08);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-family: 'Consolas', 'Monaco', monospace;
+}
+.markdown-body pre {
+  background: #1e1f26;
+  color: #e4e5ea;
+  padding: 12px 16px;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin: 8px 0;
+}
+.markdown-body pre code {
+  background: none;
+  padding: 0;
+  color: inherit;
+}
+.markdown-body ul, .markdown-body ol {
+  padding-left: 20px;
+  margin: 4px 0;
+}
+.markdown-body strong {
+  color: var(--text);
+}
